@@ -24,8 +24,6 @@ env:
 
 jobs:
   preview:
-    if: |
-      ${{ github.repository_owner == 'withastro' && contains(github.event.pull_request.labels.*.name, 'pr: preview') }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
